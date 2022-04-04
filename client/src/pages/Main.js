@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components"
+import MusicStoneImg from "../img/MusicStone.png";
+import LogoImg from "../img/musicstonelogo.png";
+import StreamImg from "../img/StreamImg.png"
+import BlockChainImg from "../img/blockchain.png";
 
 export function Main() {
   return (
     <Body>
       <ImgBox>
-        <Img className="mainimg" src="/img/MusicStone.png" alt="profile" />
+        <Img className="mainimg" src={MusicStoneImg} alt="profile" />
       </ImgBox>
       <ContentContainer>
         <SubTitle><h1>About MusicStone</h1></SubTitle>
@@ -23,13 +27,13 @@ export function Main() {
             </div>
           </InfoBox>
           <InfoImgBox>
-            <img src="/img/musicstonelogo.png" />
+            <img src={LogoImg} />
           </InfoImgBox>
         </ContentWrapper>
         <SubTitleRight><h1>즐겨듣는 음악들을 수집하세요</h1></SubTitleRight>
         <ContentWrapper>
           <InfoImgBox>
-            <img src="/img/StreamImg.png" />
+            <img src={StreamImg} />
           </InfoImgBox>
           <InfoBox>
             <h3><i>스트리밍</i></h3>
@@ -60,7 +64,7 @@ export function Main() {
             </div>
           </InfoBox>
           <InfoImgBox>
-            <img src="/img/blockchain.png" />
+            <img src={BlockChainImg} />
 
           </InfoImgBox>
         </ContentWrapper>
